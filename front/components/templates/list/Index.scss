@@ -1,0 +1,45 @@
+.list {
+	margin: 20px auto 0;
+
+	&Table {
+		border: 2px solid #000;
+		margin: 15px auto 0;
+		background: #fff;
+
+		&Tr {
+			border-bottom: 1px solid #000;
+
+			&:last-child {
+				border-bottom: 0;
+			}
+
+			&Thead {
+				border-bottom: 2px solid #000;
+			}
+		}
+
+		&Th {
+			padding: 10px;
+			text-align: center;
+		}
+
+		&Td {
+			padding: 10px;
+			text-align: left;
+
+			&Ex {
+				text-align: center;
+			}
+		} 
+	}
+}
+
+.searchArea {
+	// display: flex;
+	// align-items: center;
+
+	&Select {
+		height: 48px;
+		margin-left: 15px;
+	}
+}

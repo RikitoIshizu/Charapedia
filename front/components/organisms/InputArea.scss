@@ -1,0 +1,66 @@
+.inputList {
+	margin-bottom: 10px;
+	display: flex;
+	align-items: center;
+
+	&Label {
+		margin-right: 15px;
+		font-weight: bold;
+		width: 80px;
+	}
+
+	&Radio {
+		cursor: pointer;
+		position: relative;
+
+		&Input {
+			position: absolute;
+			opacity: 0;
+
+			&:checked {
+				+ label {
+					&:before {
+						background-color: #3197EE;;
+						box-shadow: inset 0 0 0 4px #f4f4f4;
+					}
+				}
+			}
+		}
+
+		&Label {
+			&:before {
+				content: '';
+				background: #f4f4f4;
+				border-radius: 100%;
+				border: 1px solid darken(#f4f4f4, 25%);
+				display: inline-block;
+				width: 1.4em;
+				height: 1.4em;
+				position: relative;
+				top: -0.2em;
+				margin-right: 1em; 
+				vertical-align: top;
+				cursor: pointer;
+				text-align: center;
+				transition: all 250ms ease;
+			}
+		}
+	}
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.backButton {
+  text-align: center;
+}
+
+.deleteButton {
+	margin: 20px 0;
+	text-align: center;
+}
+
+.errorMessage {
+	color: red;
+}

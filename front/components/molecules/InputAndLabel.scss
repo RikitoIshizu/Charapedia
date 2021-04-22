@@ -1,0 +1,14 @@
+.inputList {
+	display: flex;
+	align-items: center;
+
+	&Label {
+		margin-right: 15px;
+		font-weight: bold;
+		width: auto;
+	}
+
+	&Border {
+		border: 3px solid red;
+	}
+}
